@@ -1,4 +1,1 @@
 C - Hello, World
-
-C
-
