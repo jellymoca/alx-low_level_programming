@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - prints the first 98 Fibonacci numbers, starting with 1 and 2
+* main - block to be executed
 * Return: always returns 0
 */
 int main(void)
@@ -13,7 +13,9 @@ unsigned long int bef1;
 unsigned long int bef2;
 unsigned long int aft1;
 unsigned long int aft2;
+
 printf("%ld", bef);
+
 for (i = 1; i < 91; i++)
 {
 printf(", %ld", aft);
@@ -24,6 +26,7 @@ bef1 = (bef / l);
 bef2 = (bef % l);
 aft1 = (aft / l);
 aft2 = (aft % l);
+
 for (i = 92; i <= 98; ++i)
 {
 printf(", %ld", aft1 + (aft2 / 1));
