@@ -24,7 +24,7 @@ _putchar(',');
 _putchar(' ');
 _putchar(' ');
 _putchar(prod + '0');
- }
+}
 else
 {
 _putchar(',');
