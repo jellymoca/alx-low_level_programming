@@ -1,28 +1,33 @@
-#include "main.h"
+#include <stdio.h>
+
 /**
-* print_triangle - prints a triangle, followed by a new line
-* @size: size of the triangle
-*
-void print_triangle(int size)
+ * main - entry point
+ *
+ * Return: 0
+**/
+
+int main(void)
 {
-if (size <= 0)
-{
-_putchar('\n');
-}
-else
-{
-int i, j;
-for (i = 1; i <= size; i++)
-{
-for (j = i; j < size; j++)
-{
-_putchar(' ');
-}
-for (j = 1; j <= i; j++)
-{
-_putchar('#');
-}
-_putchar('\n');
-}
-}
+	int i;
+
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 <= 0)
+		{
+			printf("Fizz");
+		}
+		else if (i % 5 <= 0)
+		{
+			printf("Buzz");
+		}
+		else if (i % 3 <= 0 && i % 5 <= 0)
+		{
+			printf("FizzBuzz");
+		}
+		else
+		{
+			printf("%d", i);
+		}
+	}
+	return (0);
 }
