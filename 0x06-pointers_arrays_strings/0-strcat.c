@@ -6,24 +6,17 @@
 * Return: 0 dest
 */
 
-char *_strncat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
-int i, j;
+int i;
 
-i = 0;
-j = 0;
+for(i = 0; dest[i] != '\0'; i++);
 
-while (dest[i] != '\0')
+for(int j=0; src[j] != '\0'; j++)
 {
+dest[i] = src[j];  
 i++;
-}
-while (src[j] != '\0')
-{	
-dest[i] = src[j];
-i++;
-j++;
 }
 dest[i] = '\0';
 return (dest);
 }
-    
