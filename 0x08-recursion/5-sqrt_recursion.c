@@ -3,6 +3,7 @@
 /**
 * sqroot - find square root of n
 * @n: number
+* @root: base number
 * Return: natural square root or -1
 */
 
