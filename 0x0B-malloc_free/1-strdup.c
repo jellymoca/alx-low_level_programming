@@ -19,7 +19,7 @@ return (NULL);
 for (i = 0; str[i]; i++)
 ;
 i++;
-str2 = malloc(i * sizeof(char));
+str2 = malloc(i *sizeof(char));
 if (str2 == NULL)
 {
 return (NULL);
