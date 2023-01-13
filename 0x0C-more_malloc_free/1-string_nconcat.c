@@ -29,31 +29,37 @@ return (range);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int lenS1 = _strlen(s1);
-unsigned int lenS2 = _strlen(s2);
+unsigned int i, j, size, lenS1, lenS2;
 char *s;
-unsigned int size, i, j;
 
-if (n == lenS2)
+if (s1 == NULL)
 {
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
+}
+lenS1 = _strlen(s1);
+lenS2 = _strlen(s2);
+if (n > lenS2)
+{
+n = lenS2;
+}
 size = lenS1 + n;
-}
-else
+s = malloc(sizeof(char) * size + 1);
+if (!s)
 {
-size = lenS1 + (lenS2 - n);
+return (NULL);
 }
-
-s = malloc(sizeof(char) * size);
-
 for (i = 0; i < lenS1; i++)
 {
 s[i] = s1[i];
 }
-
-for (j = 0; j < (size - lenS1); j++)
+for (j = 0; j < n; j++, i++)
 {
-s[lenS1 + j] = s2[j];
+s[i] = s2[j];
 }
-s[size - 1] = '\0';
+s[i] = '\0';
 return (s);
 }
