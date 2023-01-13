@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
 * _strlen - returns the length of a string
@@ -28,10 +29,10 @@ return (range);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int lenS1 = _strlen(s1);
-int lenS2 = _strlen(s2)
+unsigned int lenS1 = _strlen(s1);
+unsigned int lenS2 = _strlen(s2);
 char *s;
-int size, i, j;
+unsigned int size, i, j;
 
 if (n == lenS2)
 {
