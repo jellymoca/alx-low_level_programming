@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "main.h"
+#include <stlib.h>
 
 /**
 * _realloc - reallocates a memory block using malloc and free
