@@ -61,4 +61,4 @@ typedef struct op
 } op_t;
 
 
-#endif /*CALC*/function prototypes and data structures used by the program
+#endif
