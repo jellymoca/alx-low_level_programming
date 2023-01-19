@@ -1,1 +1,1 @@
-C - Variables, if, else, while
+C - Function pointers
