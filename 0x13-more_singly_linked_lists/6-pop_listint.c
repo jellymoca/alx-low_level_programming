@@ -9,13 +9,13 @@
 
 int pop_listint(listint_t **head)
 {
-listint_t *current = *head;
-int n = current->n;
-
-if (*head == NULL)
+listint_t *current;
+int num;
+if (!head || !*head)
 return (0);
-
-*head = (*head)->next;
-free(current);
-return (n);
+num = (*head)->n;
+current = (*head)->next;
+free(*head);
+*head = current;
+return (num);
 }
